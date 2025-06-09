@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter M and N: ");
+        int M = sc.nextInt();
+        int N = sc.nextInt();
+        System.out.print("Enter element to search: ");
+        int key = sc.nextInt();
+        if (key >= M && key <= N) {
+            System.out.println("Element " + key + " is within the range.");
+        } else {
+            System.out.println("Element " + key + " is NOT within the range.");
+        }
+    }
+}
